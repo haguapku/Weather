@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <string name="now">Now</string>
+    <string name="currentTemperatureText">Current Temperature: </string>
+    <string name="windSpeedText">Wind Speed: </string>
+    <string name="updateTime">Updated at: </string>
+    <string name="summary">Summary: </string>
+    <string name="precipIndensity">precipIndensity: </string>
+    <string name="precipType">precipType: </string>
+    <string name="precipProbability">PrecipProbability:</string>
+    <string name="cloudCover">CloudCover:</string>
+    <string name="pressure">Pressure</string>
+    <string name="ozone">Ozone:</string>
+    <string name="nextFortyHours">Next 48 Hours</string>
+    <string name="timeHourlyText">Time/Day</string>
+    <string name="iconHourlyText">ICON</string>
+    <string name="summaryHourlyText">Weather Forcast</string>
+    <string name="temperatureHourlyText">Temp ºC</string>
+    <string name="windSpeedHourlyText">Wind km/h</string>
+    <string name="nextSevenDays">One Week Weather</string>
+    <string name="maxtemperature">MAX</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="intensity">Intensity</string>
+    <string name="humidity">Humidity</string>
+    <string name="windbear">WindBearing</string>
+</resources>

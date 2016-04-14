@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://robobinding.org/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.robobinding.androidmvvm.MainActivity"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/maxmintemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/maxtemptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maxtemperature"/>
+
+            <TextView
+                android:id="@+id/maxtemp"
+                android:layout_toRightOf="@+id/maxtemptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{maxTemp}"/>
+
+            <TextView
+                android:id="@+id/mintemptext"
+                android:layout_below="@+id/maxtemptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MIN"/>
+
+            <TextView
+                android:id="@+id/mintemp"
+                android:layout_below="@+id/maxtemp"
+                android:layout_toRightOf="@+id/mintemptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{minTemp}"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{date}"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date"
+                bind:text="{icon}"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/summary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            bind:text="{summary}"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sunrise" />
+
+            <TextView
+                android:layout_toRightOf="@+id/sunrise"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{sunrise}"/>
+
+            <TextView
+                android:id="@+id/sunset"
+                android:layout_below="@+id/sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sunrise" />
+
+            <TextView
+                android:layout_toRightOf="@+id/sunset"
+                android:layout_below="@+id/sunrise"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{sunset}"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/precipType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{precipType}" />
+
+            <TextView
+                android:layout_toRightOf="@+id/precipType"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{precipProbability}"/>
+
+            <TextView
+                android:id="@+id/precipIntensity"
+                android:layout_below="@+id/precipType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/intensity" />
+
+            <TextView
+                android:layout_toRightOf="@+id/precipIntensity"
+                android:layout_below="@+id/precipType"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{intensity}"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/humidity"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/humidity"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{humidity}"/>
+
+            <TextView
+                android:id="@+id/pressure"
+                android:layout_below="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pressure"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/humidity"
+                android:layout_below="@+id/humidity"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{pressure}"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/windspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/windSpeedText"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/windspeed"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{windSpeed}"/>
+
+            <TextView
+                android:id="@+id/windbear"
+                android:layout_below="@+id/windspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/windbear"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/windspeed"
+                android:layout_below="@+id/windspeed"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:text="{windBearing}"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
